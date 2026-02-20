@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Projet e-commerce</title>
 
     <style>
@@ -40,10 +41,13 @@
                     </div>
                     <ul tabindex="-1"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a href="../../index.html" class="text-lg font-[Poppins] font-medium">Home</ahref=class=></li>
-                        <li><a href="../projetecommercewebsite/public/pages/shop.html" class="text-lg font-[Poppins] font-medium">Shop</a></li>
+                        <li><a href="../../index.html" class="text-lg font-[Poppins] font-medium">Home</ahref=class=>
+                        </li>
+                        <li><a href="../projetecommercewebsite/public/pages/shop.html"
+                                class="text-lg font-[Poppins] font-medium">Shop</a></li>
                         <li><a href="" class="text-lg font-[Poppins] font-medium">About</a></li>
-                        <li><a href="../projetecommercewebsite/public/pages/contact.html" class="text-lg font-[Poppins] font-medium">Contact</a></li>
+                        <li><a href="../projetecommercewebsite/public/pages/contact.html"
+                                class="text-lg font-[Poppins] font-medium">Contact</a></li>
                     </ul>
                 </div>
 
@@ -57,9 +61,11 @@
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 gap-[75px]">
                     <li><a href="../../index.html" class="text-lg font-[Poppins] font-medium">Home</a></li>
-                    <li><a href="../projetecommercewebsite/public/pages/shop.html" class="text-lg font-[Poppins] font-medium">Shop</a></li>
+                    <li><a href="../projetecommercewebsite/public/pages/shop.html"
+                            class="text-lg font-[Poppins] font-medium">Shop</a></li>
                     <li><a href="" class="text-lg font-[Poppins] font-medium">About</a></li>
-                    <li><a href="../projetecommercewebsite/public/pages/contact.html" class="text-lg font-[Poppins] font-medium">Contact</a></li>
+                    <li><a href="../projetecommercewebsite/public/pages/contact.html"
+                            class="text-lg font-[Poppins] font-medium">Contact</a></li>
                 </ul>
             </div>
 
@@ -127,7 +133,7 @@
             </div>
         </section>
         <!-- .............................................section Browse....................... -->
-        <section class="lg:my-[38.17px]">
+        <section class="lg:my-[38.17px]" data-aos="fade-up">
             <div class="text-center my-8">
                 <h2 class="text-2xl text-black font-[Poppins] font-bold">Browse The Range</h2>
                 <p class="text-lg font-[Poppins] font-normal text-[#666666]">Lorem ipsum dolor sit amet, consectetur
@@ -164,13 +170,13 @@
             </div>
         </section>
         <!-- .........................................section Product............................ -->
-        <section>
+        <section data-aos="fade-up">
             <div class="text-center my-8">
                 <h2 class="text-2xl text-black font-[Poppins] font-bold">Our Products</h2>
             </div>
 
             <div class="lg:flex justify-between flex-col max-w-[1286px] mx-auto px-8">
-                
+
                 <div
                     class="flex flex-wrap justify-center gap-8 m-4 min-[1280px]:flex-nowrap min-[1280px]:justify-between">
                     <div class="card bg-base-200 shadow w-[350px]">
@@ -300,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
 
             <div class="flex justify-between items-center flex-col my-6">
@@ -400,9 +406,11 @@
         <nav>
             <h6 class="footer-title text-lg text-[#9F9F9F] mb-8">links</h6>
             <a href="../../index.html" class="link link-hover text-lg text-[#000000] font-[Poppins]">Home</a>
-            <a href="../projetecommercewebsite/public/pages/shop.html" class="link link-hover text-lg text-[#000000] font-[Poppins]">Shop</a>
+            <a href="../projetecommercewebsite/public/pages/shop.html"
+                class="link link-hover text-lg text-[#000000] font-[Poppins]">Shop</a>
             <a href="" class="link link-hover text-lg text-[#000000] font-[Poppins]">About</a>
-            <a href="../projetecommercewebsite/public/pages/contact.html" class="link link-hover text-lg text-[#000000] font-[Poppins]">Contact</a>
+            <a href="../projetecommercewebsite/public/pages/contact.html"
+                class="link link-hover text-lg text-[#000000] font-[Poppins]">Contact</a>
         </nav>
         <nav>
             <h6 class="footer-title  text-lg text-[#9F9F9F] mb-8">help</h6>
@@ -427,6 +435,11 @@
     <aside class="max-w-[1286px] mx-auto mt-8 p-4">
         <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
     </aside>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
